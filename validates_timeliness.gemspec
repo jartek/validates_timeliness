@@ -15,6 +15,4 @@ Gem::Specification.new do |s|
   s.files            = `git ls-files`.split("\n") - %w{ .gitignore .rspec Gemfile Gemfile.lock autotest/discover.rb Appraisals Travis.yml } - Dir['gemsfiles/*']
   s.test_files       = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.extra_rdoc_files = ["README.rdoc", "CHANGELOG.rdoc", "LICENSE"]
-
-  s.add_runtime_dependency(%q<timeliness>, ["~> 0.3.7"])
 end
